@@ -2,7 +2,9 @@ import pandas as pd
 import os
 
 
-def load_label_data():
+def load_label_data() -> dict:
+    """Loads all label data from an excel file"""
+
     label_data = {}
     for item in os.listdir("data/label_data"):
         path = f"data/label_data/{item}"
@@ -11,7 +13,9 @@ def load_label_data():
     return label_data
 
 
-def load_sensor_data():
+def load_sensor_data() -> dict:
+    """Loads all sensor data from a csv file"""
+
     sensor_data = {}
     for folder in os.listdir("data/sensor_data"):
         datasets = {}
@@ -26,6 +30,3 @@ def load_sensor_data():
 
 label_data = load_label_data()
 sensor_data = load_sensor_data()
-
-
-

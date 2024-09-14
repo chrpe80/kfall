@@ -5,7 +5,6 @@ from load_all_data import label_data, sensor_data
 # This code is for getting the label and sensor data for task 20 (fall forward when trying to sit down), trial 3.
 # There is one dataset for each of the 32 subjects.
 # In the data folder, there are 2 subfolders: label_data and sensor_data.
-# There is one folder for every subject in each.
 
 
 def get_onset_impact_frame_numbers() -> list:
